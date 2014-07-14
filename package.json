@@ -11,7 +11,7 @@
   "license": "BSD-2-Clause",
   "dependencies": {
     "envify": "~1.2.0",
-    "react": "~0.9.0"
+    "react": "~0.10.0"
   },
   "devDependencies": {
     "webpack": "~1.0.0",
