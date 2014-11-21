@@ -10,11 +10,11 @@
   "author": "",
   "license": "BSD-2-Clause",
   "dependencies": {
-    "envify": "~1.2.0",
-    "react": "~0.10.0"
+    "envify": "^1.2.0",
+    "react": "^0.12.1"
   },
   "devDependencies": {
-    "webpack": "~1.0.0",
-    "jsx-loader": "0.0.0"
+    "webpack": "^1.4.13",
+    "jsx-loader": "^0.12.2"
   }
 }
