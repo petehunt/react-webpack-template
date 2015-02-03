@@ -8,7 +8,7 @@
     "test": "jest"
   },
   "jest": {
-    "scriptPreprocessor": "<rootDir>/preprocessor.js",
+    "scriptPreprocessor": "<rootDir>/tests/preprocessor.js",
     "unmockedModulePathPatterns": [
       "<rootDir>/node_modules/react"
     ],
@@ -20,7 +20,8 @@
     "testFileExtensions": [
       "js"
     ],
-    "testDirectoryName": "tests"
+    "testDirectoryName": "tests",
+    "testPathDirs": ["<rootDir>/tests/unit", "<rootDir>/tests/components"]
   },
   "author": "",
   "license": "BSD-2-Clause",
@@ -29,6 +30,7 @@
     "react": "^0.13.0-beta.1"
   },
   "devDependencies": {
+    "html-webpack-plugin": "^1.1.0",
     "jest-cli": "^0.2.2",
     "jsx-loader": "^0.12.2",
     "react-tools": "^0.12.2",

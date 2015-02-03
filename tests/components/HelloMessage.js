@@ -1,9 +1,10 @@
-jest.dontMock('../../HelloMessage');
+var componentPath = '../../src/HelloMessage';
+jest.dontMock(componentPath);
 
 describe('HelloMessage', function() {
   it('greets react', function() {
     var React = require('react/addons');
-    var HelloMessage = require('../../HelloMessage');
+    var HelloMessage = require(componentPath);
     var TestUtils = React.addons.TestUtils;
 
     var message = TestUtils.renderIntoDocument(
