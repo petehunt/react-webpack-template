@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack --progress --colors --watch",
+    "start": "http-server dist/",
+    "build": "webpack --progress --colors --watch",
     "test": "jest"
   },
   "jest": {
@@ -21,7 +22,10 @@
       "js"
     ],
     "testDirectoryName": "tests",
-    "testPathDirs": ["<rootDir>/tests/unit", "<rootDir>/tests/components"]
+    "testPathDirs": [
+      "<rootDir>/tests/unit",
+      "<rootDir>/tests/components"
+    ]
   },
   "author": "",
   "license": "BSD-2-Clause",
@@ -31,6 +35,7 @@
   },
   "devDependencies": {
     "html-webpack-plugin": "^1.1.0",
+    "http-server": "^0.7.4",
     "jest-cli": "^0.2.2",
     "jsx-loader": "^0.12.2",
     "react-tools": "^0.12.2",
