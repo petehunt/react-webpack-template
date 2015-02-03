@@ -1,4 +1,10 @@
 /** @jsx React.DOM */
 var React = require('react');
 
-React.renderComponent(<h1>Hello React!</h1>, document.body);
+class HelloMessage extends React.Component {
+  render() {
+    return <div>Hello React</div>;
+  }
+}
+
+React.render(<HelloMessage />, document.body);

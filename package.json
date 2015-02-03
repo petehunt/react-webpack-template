@@ -11,10 +11,12 @@
   "license": "BSD-2-Clause",
   "dependencies": {
     "envify": "^1.2.0",
-    "react": "^0.12.1"
+    "react": "^0.13.0-beta.1"
   },
   "devDependencies": {
-    "webpack": "^1.4.13",
-    "jsx-loader": "^0.12.2"
+    "6to5-core": "^3.3.7",
+    "6to5-loader": "^3.0.0",
+    "jsx-loader": "^0.12.2",
+    "webpack": "^1.4.13"
   }
 }
