@@ -1,12 +1,14 @@
+var HtmlWebpackPlugin = require('html-webpack-plugin');
+
 module.exports = {
   cache: true,
-  entry: './index',
+  entry: './src/index',
   output: {
-    filename: 'browser-bundle.js'
+    filename: './dist/browser-bundle.js'
   },
   module: {
     loaders: [
-      {test: /\.js$/, loader: 'jsx-loader'}
+      {test: /\.js$/, loader: 'jsx-loader?harmony'}
     ]
   }
 };

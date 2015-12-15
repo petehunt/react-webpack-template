@@ -4,17 +4,41 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack --progress --colors --watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "http-server dist/",
+    "build": "webpack --progress --colors --watch",
+    "test": "jest"
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/tests/preprocessor.js",
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "jsx"
+    ],
+    "testFileExtensions": [
+      "js"
+    ],
+    "testDirectoryName": "tests",
+    "testPathDirs": [
+      "<rootDir>/tests/unit",
+      "<rootDir>/tests/components"
+    ]
   },
   "author": "",
   "license": "BSD-2-Clause",
   "dependencies": {
     "envify": "^1.2.0",
-    "react": "^0.12.1"
+    "react": "^0.13.0-beta.1"
   },
   "devDependencies": {
-    "webpack": "^1.4.13",
-    "jsx-loader": "^0.12.2"
+    "html-webpack-plugin": "^1.1.0",
+    "http-server": "^0.7.4",
+    "jest-cli": "^0.2.2",
+    "jsx-loader": "^0.12.2",
+    "react-tools": "^0.12.2",
+    "webpack": "^1.4.13"
   }
 }
