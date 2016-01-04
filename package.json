@@ -10,11 +10,14 @@
   "author": "",
   "license": "BSD-2-Clause",
   "dependencies": {
-    "envify": "^1.2.0",
-    "react": "^0.12.1"
+    "react": "^0.14.5",
+    "react-dom": "^0.14.5"
   },
   "devDependencies": {
-    "webpack": "^1.4.13",
-    "jsx-loader": "^0.12.2"
+    "babel-core": "^6.3.26",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "webpack": "^1.12.9"
   }
 }
